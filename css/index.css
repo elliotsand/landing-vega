@@ -1,0 +1,68 @@
+.iconos-redes {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2cm;
+    padding: 0;
+    margin: 15px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.iconos-redes i {
+    color: rgb(124, 72, 72);
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+
+.fa.fa-facebook {
+    top: 8px;
+    left: 16px;
+    font-size: 35px;
+} 
+
+.fa.fa-instagram {
+    top: 8px;
+    left: 12px;
+    font-size: 35px;
+} 
+
+.iconos-redes a {
+    display: inline-block;
+}
+
+.iconos-redes a::before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    transition: all 26ms ease-out;
+}
+
+.iconos-redes.facebook a::before {
+    background: linear-gradient(300deg, #061f9f 0%, #767fab 46%, #e7dbc7 100%);
+}
+
+.iconos-redes.instagram a::before {
+    background: linear-gradient(300deg, #9f0669 0%, #c583b0 46%, #e7dbc7 100%);
+}
+
+.iconos-redes a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.iconos-redes a:hover i {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-background-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
